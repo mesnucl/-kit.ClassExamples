@@ -17,26 +17,6 @@
             return $this->facultyNumber;
         }
 
-        public function getAsHTMLTableData(): string
-        {
-            $partentHtml = parent::getAsHTMLTableData();
-
-            return"
-                {$partentHtml}
-                <td>{$this->facultyNumber}</td>
-            ";
-        }
-
-        public function getAsHTMLTableRow(): string
-        {
-           return"
-                <tr>
-                    {$this-> getAsHTMLTableData()}
-                </tr>
-           ";
-        }
-
-
         public function __toString() : string
         {
             $parentAsString = parent::__toString();
