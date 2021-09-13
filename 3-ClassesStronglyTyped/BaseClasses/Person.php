@@ -7,7 +7,7 @@
 
         public function __construct( string $firstName,
                                      string $lastName,
-                                     string $dateOfBirth)
+                                     DateTime $dateOfBirth)
         {
             $this->firstName = $firstName;
             $this->lastName = $lastName;
