@@ -5,7 +5,7 @@
 
         public ClassRoom $room;
         public Course $course;
-        public $students; //Students is an array but PHP does not support strongly typed array, how could we fix this?
+        public  array $students; //Students is an array but PHP does not support strongly typed array, how could we fix this?
         public Teacher $teacher;
 
         public function __construct(
@@ -13,7 +13,7 @@
             DateTime $endDateTime,
             ClassRoom $room,
             Course $course,
-            $students, //Students is an array but PHP does not support strongly typed array, how could we fix this?
+            array $students,
             Teacher $teacher)
         {
             parent::__construct($startDateTime,$endDateTime);
